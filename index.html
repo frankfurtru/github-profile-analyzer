@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile Analyzer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background: #f6f8fa;
+      color: #24292e;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #0969da;
+    }
+    .input-group {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background: #0969da;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover {
+      background: #074b9f;
+    }
+    #results {
+      display: none;
+    }
+    .stat-card {
+      background: #f1f8ff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .suggestions {
+      margin-top: 1.5rem;
+    }
+    .suggestion {
+      padding: 0.75rem;
+      background: #fff8c5;
+      border-left: 4px solid #d9a700;
+      margin-bottom: 0.75rem;
+      border-radius: 0 6px 6px 0;
+    }
+    .loading {
+      text-align: center;
+      color: #57606a;
+    }
+    .error {
+      color: #cf222e;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Profile Analyzer</h1>
+    <div class="input-group">
+      <input type="text" id="username" placeholder="Enter GitHub username" />
+      <button id="analyze">Analyze</button>
+    </div>
+    <div id="loading" class="loading" style="display:none;">Loading profile...</div>
+    <div id="error" class="error"></div>
+    <div id="results">
+      <h2 id="user-title"></h2>
+      <div id="stats"></div>
+      <div class="suggestions">
+        <h3>Suggestions</h3>
+        <div id="suggestions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // We'll add JavaScript here next
+  </script>
+</body>
+</html>
